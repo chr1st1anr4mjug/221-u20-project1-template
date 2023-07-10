@@ -21,7 +21,7 @@ main {
 }
 
 footer {
-	position: absolute;
+	position: fixed;
 	left: 0px;
   bottom: 0px;
 	width: 100%;
@@ -54,6 +54,11 @@ a {
 }
 
 .feedImage {
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.myImage {
 	max-width: 150px;
 	max-height: 150px;
 }

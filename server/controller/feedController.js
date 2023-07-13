@@ -1,3 +1,4 @@
+
 const feedPost = require('../model/feedItem')
 
 let feedPosts = [];

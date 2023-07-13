@@ -1,5 +1,4 @@
-
-const feedPost = require('../model/feedItem')
+const feedPost = require('../model/feedItem');
 
 let feedPosts = [];
 let feedPost1 = feedPost.createfeedPost("Marist College Updates Dining Hall!", "Chef Cheryl speaks on the new food options here at the Marist Dining Hall", "https://www.marist.edu/", "/images/news_pic.jpg");
@@ -21,13 +20,6 @@ exports.savefeedPost = function(req, res) {
     feedPosts.push(newfeedPost);
     res.send(JSON.stringify(feedPosts));
 }
-
-/*exports.savefeedPost = function(req, res) {
-	let newfeedPost = feedPost.createfeedPost(req.body.Title, req.body.Body, req.body.linkurl, req.body.imageurl);
-	feedPosts.push(newfeedPost);
-	res.setHeader('Content-Type', 'application/json');
-	res.send(feedPosts);
-}*/
 
 exports.getfeedPost = function(req, res) {
 	res.setHeader('Content-Type', 'application/json');
